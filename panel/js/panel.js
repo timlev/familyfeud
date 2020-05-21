@@ -20,7 +20,7 @@ var missPointTeam2 = 0;
 				game.document.getElementById("idcLogo").style.display = 'none';
 				game.document.getElementById("counter").innerHTML = "Mr. L Feud";
 				game.document.getElementById("counter").style.display = "none";
-				game.document.body.setAttribute("style", "background: linear-gradient(to bottom, #a7cfdf -50%, #580e12 100%);");
+				game.document.body.setAttribute("style", "background: blue;");
 				game.app.init();
 
 			}
