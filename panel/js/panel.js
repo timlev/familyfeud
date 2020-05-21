@@ -5,7 +5,7 @@ var missPointTeam1 = 0;
 var missPointTeam2 = 0;
 
 	function start_game(){
-		play_sound('ff_open.mp3');
+		play_sound('ff_open_very_short.mp3');
 		document.getElementById("buttonStart").disabled = true;
 
 		var counter = 33;
