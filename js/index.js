@@ -216,13 +216,13 @@ var app = {
 		var team2Score = document.getElementById("team2").innerHTML;
 
 		if(team1Score>team2Score){
-			winner = "Kazanan " + team1 + "Takımı";
+			winner = "Congratulations " + team1 + "!";
 		}
 		else if(team1Score<team2Score){
-			winner = "Kazanan " + team2 + "Takımı";
+			winner = "Congratulations " + team2 + "!";
 		}
 		else{
-			winner = "Bu mükemmel yarışın kazananı her iki takım!";
+			winner = "Thanks for playing Mr. L Feud!";
 		}
 		return winner;
 	}
