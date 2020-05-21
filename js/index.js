@@ -4,7 +4,7 @@ var team2 = window.opener.document.getElementById("team2NAME").value;
 var app = {
   version: 1,
   currentQ: 0,
-  jsonFile:"js/FF3.json",
+  jsonFile:"js/questions.json",
   board: $("<div id='gameBoardId' class='gameBoard'>"+
              "<!--- Scores --->"+
              "<div class='score' id='boardScore'>0</div>"+
