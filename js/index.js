@@ -10,25 +10,25 @@ var app = {
              "<div class='score' id='boardScore'>0</div>"+
              "<div class='score' id='team1' >0</div>"+
              "<div class='score' id='team2' >0</div>"+
-           
+
              "<!--- Question --->"+
              "<div id='questionBar' class='questionHolder'>"+
                "<span class='question'></span>"+
              "</div>"+
-           
+
              "<!--- Answers --->"+
              "<div id='answerBar' class='colHolder'>"+
                "<div class='col1'></div>"+
                "<div class='col2'></div>"+
              "</div>"+
-           
+
              "<!--- Buttons --->"+
              "<div id='buttonBar' class='btnHolder'>"+
 			   "<div id='missTeam1_3' class= 'miss'>X</div>"+
 			   "<div id='missTeam1_2' class= 'miss'>X</div>"+
 			   "<div id='missTeam1_1' class= 'miss'>X</div>"+
                "<div id='awardTeam1' data-team='1' class='button'>" + team1 + "</div>"+
-               "<div id='newQuestion' class='button'>AGÜ YARIŞIYOR</div>"+
+               "<div id='newQuestion' class='button'>New Question</div>"+
                "<div id='awardTeam2' data-team='2'class='button'>" + team2 + "</div>"+
 			   "<div id='missTeam2_1' class= 'miss'>X</div>"+
 			   "<div id='missTeam2_2' class= 'miss'>X</div>"+
@@ -37,7 +37,7 @@ var app = {
            "</div>"
 		   ),
 
-	
+
   // Utility functions
   shuffle: function(array){
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -62,23 +62,23 @@ var app = {
   makeQuestion: function(qNum){
     var qText  = app.questions[qNum]
     var qAnswr = app.allData[qText]
-		
+
     var qNum = qAnswr.length
         qNum = (qNum<8)? 8: qNum;
         qNum = (qNum % 2 != 0) ? qNum+1: qNum;
-    
+
     var boardScore = app.board.find("#boardScore")
     var question   = app.board.find(".question")
     var col1       = app.board.find(".col1")
     var col2       = app.board.find(".col2")
-    
+
     boardScore.html(0)
     question.html(qText.replace(/&x22;/gi,'"'))
     col1.empty()
     col2.empty()
 
     for (var i = 0; i < qNum; i++){
-      var aLI     
+      var aLI
       if(qAnswr[i]){
         aLI = $("<div class='cardHolder' data-card-got='false' id='answer_" + i + "'>"+
                   "<div class='card'>"+
@@ -96,8 +96,8 @@ var app = {
       }
       var parentDiv = (i<(qNum/2))? col1: col2;
       $(aLI).appendTo(parentDiv)
-    }  
-    
+    }
+
     var cardHolders = app.board.find('.cardHolder')
     var cards       = app.board.find('.card')
     var backs       = app.board.find('.back')
@@ -110,15 +110,15 @@ var app = {
 
     cards.data("flipped", false)
     cards.data("gotPoint", false)
-	
+
     function showCard(){
       var card = $('.card', this)
-      var flipped = $(card).data("flipped")	  
+      var flipped = $(card).data("flipped")
       var cardRotate = (flipped)?0:-180;
       TweenLite.to(card, 1, {rotationX:cardRotate, ease:Back.easeOut})
       flipped = !flipped
       $(card).data("flipped", flipped)
-	  
+
 	  app.getBoardScore(this.id)
     }
 	window.opener.GetQuestion(qText);
@@ -126,9 +126,9 @@ var app = {
     cardHolders.on('click',showCard)
   },
   getBoardScore: function(card){
-	
+
 	//var gotPointsBefore = document.getElementById(card).getAttribute("data-card-got");
-	
+
     var cards = app.board.find('.card')
     var boardScore = app.board.find('#boardScore')
     var currentScore = {var: boardScore.html()}
@@ -139,17 +139,17 @@ var app = {
 		score += parseInt(value)
 	}
     }
-    $.each(cards, tallyScore)      
+    $.each(cards, tallyScore)
     TweenMax.to(currentScore, 1, {
-      var: score, 
+      var: score,
       onUpdate: function () {
         boardScore.html(Math.round(currentScore.var));
       },
       ease: Power3.easeOut,
     });
-	
-	//document.getElementById(card).setAttribute("data-card-got", "true"); 
-	
+
+	//document.getElementById(card).setAttribute("data-card-got", "true");
+
   },
 
   awardPoints: function(num){
@@ -157,13 +157,13 @@ var app = {
     var boardScore   = app.board.find('#boardScore')
     var currentScore = {var: parseInt(boardScore.html())}
     var team         = app.board.find("#team"+num)
-	
+
     var teamScore    = {var: parseInt(team.html())}
     var teamScoreUpdated = (teamScore.var + currentScore.var)
-	
-	
+
+
     TweenMax.to(teamScore, 1, {
-      var: teamScoreUpdated, 
+      var: teamScoreUpdated,
       onUpdate: function () {
         team.html(Math.round(teamScore.var));
 		window.opener.document.getElementById("team1POINT").value = document.getElementById("team1").innerHTML;
@@ -171,16 +171,16 @@ var app = {
       },
       ease: Power3.easeOut,
     });
-    
+
     TweenMax.to(currentScore, 1, {
-      var: 0, 
+      var: 0,
       onUpdate: function () {
         boardScore.html(Math.round(currentScore.var));
       },
       ease: Power3.easeOut,
     });
-	
-	
+
+
   },
   changeQuestion: function(){
     app.currentQ++
@@ -195,9 +195,9 @@ var app = {
     app.board.find('#awardTeam2'  ).on('click', app.awardPoints)
 	window.opener.game_window_init_done();
 
-  }  
+  }
 }
-	function teamPointChange(){		
+	function teamPointChange(){
 		document.getElementById("team1").innerHTML = window.opener.document.getElementById("team1POINT").value;
 		document.getElementById("team2").innerHTML = window.opener.document.getElementById("team2POINT").value;
 	}
@@ -205,7 +205,7 @@ var app = {
 	function teamNameChange(){
 		team1 = window.opener.document.getElementById("team1NAME").value;
 		team2 = window.opener.document.getElementById("team2NAME").value;
-		
+
 		document.getElementById("awardTeam1").innerHTML = team1;
 		document.getElementById("awardTeam2").innerHTML = team2;
 	}
@@ -214,7 +214,7 @@ var app = {
 		var winner;
 		var team1Score = document.getElementById("team1").innerHTML;
 		var team2Score = document.getElementById("team2").innerHTML;
-		
+
 		if(team1Score>team2Score){
 			winner = "Kazanan " + team1 + "Takımı";
 		}

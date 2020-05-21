@@ -2,7 +2,7 @@
 html {
   height: 100%;
   width: 100%;
-  
+
 }
 
 body {
@@ -18,7 +18,7 @@ overflow: auto;
 
 .idc{
 	margin-top: 100px;
-	text-align: center;	
+	text-align: center;
 }
 
 .idc .winner{
@@ -33,13 +33,13 @@ overflow: auto;
 	text-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #7d2a2a, 0 0 35px #7d2a2a, 0 0 50px #7d2a2a, 0 0 60px #7d2a2a, 0 0 100px #7d2a2a;
 }
 @-webkit-keyframes flash {
-	0% { opacity: 1; } 
-	50% { opacity: .1; } 
+	0% { opacity: 1; }
+	50% { opacity: .1; }
 	100% { opacity: 1; }
 }
 @keyframes flash {
-	0% { opacity: 1; } 
-	50% { opacity: .1; } 
+	0% { opacity: 1; }
+	50% { opacity: .1; }
 	100% { opacity: 1; }
 }
 /* Pulse class and keyframe animation */
@@ -48,13 +48,13 @@ overflow: auto;
 	animation: pulse linear .5s infinite;
 }
 @-webkit-keyframes pulse {
-	0% { width:200px; } 
-	50% { width:340px; } 
+	0% { width:200px; }
+	50% { width:340px; }
 	100% { width:200px; }
 }
 @keyframes pulse {
-	0% { width:200px; } 
-	50% { width:340px; } 
+	0% { width:200px; }
+	50% { width:340px; }
 	100% { width:200px; }
 }
 
@@ -92,7 +92,7 @@ overflow: auto;
   min-width: 305px;
   margin: auto;
 
-  background: url('../agulogo-trans.png') #7d2a2a;
+  background: url('../panda_logo-trans.png') #7d2a2a;
   background-size: 33px 35px;
   /*background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/40041/bgFF.svg') #84151b;*/
   /*background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/40041/bgFF.svg') #3a84c3;*/
@@ -300,4 +300,3 @@ overflow: auto;
     width:50%;
   }
 }
-
