@@ -1,106 +1,107 @@
 {
-"What was your favorite part of EL this year? My favorite part of EL was ..." :[
-[ "Games", 3 ],
-[ "Writing", 2 ],
-[ "Projects", 2 ],
-[ "Everything", 1 ],
-[ "Vocabulary", 1 ],
-[ "Tests", 1 ]]
+"What was your favorite part of EL this year? My favorite part of EL was ..." :
+[["Games",3],
+["Writing",2],
+["Projects",2],
+["Everything",1],
+["Vocabulary",1],
+["Tests",1]]
 
-"What was difficult about EL this year? ______ was difficult this year." :[
-[ "Tests", 3 ],
-[ "Schedule", 2 ],
-[ "Distance Learning", 2 ],
-[ "Work/Vocabulary", 2 ],
-[ "Friends", 1 ],
-[ "Writing in Journal", 1 ]]
+"What was difficult about EL this year? ______ was difficult this year." :
+[["Tests",3],
+["Schedule",2],
+["Distance Learning",2],
+["Work OR Vocabulary",2],
+["Friends",1],
+["Writing in Journal",1]]
 
-"What do you think Panda is doing during distance learning?" :[
-[ "eating lots of bamboo", 5 ],
-[ "reading all the books/doing math", 3 ],
-[ "sleeping/saying SHH", 2 ],
-[ "eating all the pencils/destroying the classroom", 2 ]]
+"What do you think Panda is doing during distance learning?" :
+[["eating lots of bamboo",5],
+["reading all the books OR doing math",3],
+["sleeping OR saying SHH",2],
+["eating all the pencils OR destroying the classroom",2]]
 
-"What is Mr. L's favorite snack?" :[
-[ "Candy", 3 ],
-[ "Granola bars", 2 ],
-[ "IDK", 2 ],
-[ "Oreos", 2 ],
-[ "PBJ", 1 ],
-[ "Popcorn", 1 ],
-[ "Vegetables/Fruit", 1 ]]
-"What time do you go to bed during distance learning?" :[
-[ "9 PM", 3 ],
-[ "10 PM", 3 ],
-[ "9:30 PM", 2 ],
-[ "10:30 PM", 2 ],
-[ "8 PM", 1 ],
-[ "8:30 PM", 1 ]]
+"What is Mr. L's favorite snack?" :
+[["Candy",3],
+["Granola bars",2],
+["IDK",2],
+["Oreos",2],
+["PBJ",1],
+["Popcorn",1],
+["Vegetables OR Fruit",1]]
 
-"What time do you wake up during distance learning?" :[
-[ "7 AM", 4 ],
-[ "8:30 AM", 4 ],
-[ "9 AM", 2 ],
-[ "7:30 AM", 1 ]]
+"What time do you go to bed during distance learning?" :
+[["9 PM",3],
+["10 PM",3],
+["9:30 PM",2],
+["10:30 PM",2],
+["8 PM",1],
+["8:30 PM",1]]
 
-"What should your teachers do to relax this summer?" :[
-[ "Camp/Vacation/Have fun with family", 4 ],
-[ "Take a break", 3 ],
-[ "Go outside", 3 ],
-[ "Beach / Pool", 2 ]]
+"What time do you wake up during distance learning?" :
+[["7 AM",4],
+["8:30 AM",4],
+["9 AM",2],
+["7:30 AM",1]]
 
-"What will you do to relax this summer?" :[
-[ "Play outside/with pet", 4 ],
-[ "Video Games / TV", 2 ],
-[ "Chat with friends", 2 ],
-[ "Play soccer", 1 ],
-[ "Sleep in", 1 ],
-[ "IDK", 1 ]]
+"What should your teachers do to relax this summer?" :
+[["Camp OR Vacation OR Have fun with family",4],
+["Take a break",3],
+["Go outside",3],
+["Beach OR Pool",2]]
 
-"What will Panda do to relax this summer?" :[
-[ "Eat bamboo/Look for bamboo", 5 ],
-[ "Sleep/Sun Bathe", 4 ],
-[ "Computer / Movies", 2 ],
-[ "Say SHHHHH", 1 ],
-[ "I don’t know", 1 ]]
+"What will you do to relax this summer?" :
+[["Play outside OR with pet",4],
+["Video Games  OR  TV",2],
+["Chat with friends",2],
+["Play soccer",1],
+["Sleep in",1],
+["IDK",1]]
 
-"What is the first thing you are going to do at the beginning of summer?" :[
-[ "Play", 4 ],
-[ "Nothing/Sleep", 2 ],
-[ "Read", 1 ],
-[ "Party", 1 ],
-[ "Travel", 1 ],
-[ "Watch TV", 1 ],
-[ "IDK", 1 ],
-[ "Get a cat", 1 ]]
+"What will Panda do to relax this summer?" :
+[["Eat bamboo OR Look for bamboo",5],
+["Sleep OR Sun Bathe",4],
+["Computer  OR  Movies",2],
+["Say SHHHHH",1],
+["I don’t know",1]]
 
-"What costume should Mr. L wear for the end of year party?" :[
-[ "clown costume", 4 ],
-[ "funny hair", 4 ],
-[ "cowboy hat", 3 ],
-[ "suit and tie", 1 ]]
+"What is the first thing you are going to do at the beginning of summer?" :
+[["Play",4],
+["Nothing OR Sleep",2],
+["Read",1],
+["Party",1],
+["Travel",1],
+["Watch TV",1],
+["IDK",1],
+["Get a cat",1]]
 
-"What is advice would you give to a new student? I would tell them ..." :[
-[ "Work Hard", 3 ],
-[ "The school is great/happy", 3 ],
-[ "Be a friend", 2 ],
-[ "You are the best", 2 ],
-[ "How to do EL", 1 ],
-[ "I don’t know", 1 ]]
+"What costume should Mr. L wear for the end of year party?" :
+[["clown costume",4],
+["funny hair",4],
+["cowboy hat",3],
+["suit and tie",1]]
 
-"What should Mr. L stop doing next year? He should stop ..." :[
-[ "Nothing", 7 ],
-[ "IDK", 2 ],
-[ "Change some activities", 1 ],
-[ "Leaving too early in writing", 1 ],
-[ "Studying animals", 1 ]]
+"What is advice would you give to a new student? I would tell them ..." :
+[["Work Hard",3],
+["The school is great OR happy",3],
+["Be a friend",2],
+["You are the best",2],
+["How to do EL",1],
+["I don’t know",1]]
 
- "What should Mr. L do more of next year? He should _____ more." :[
-[ "IDK", 3 ],
-[ "Play more games", 3 ],
-[ "More activities/teaching", 2 ],
-[ "Parities", 1 ],
-[ "More “Tim and his dad” stories", 1 ],
-[ "More active stuff", 1 ]]
+"What should Mr. L stop doing next year? He should stop ..." :
+[["Nothing",7],
+["IDK",2],
+["Change some activities",1],
+["Leaving too early in writing",1],
+["Studying animals",1]]
+
+"What should Mr. L do more of next year? He should _____ more." :
+[["IDK",3],
+["Play more games",3],
+["More activities OR teaching",2],
+["Parities",1],
+["More “Tim and his dad” stories",1],
+["More active stuff",1]]
 
 }
