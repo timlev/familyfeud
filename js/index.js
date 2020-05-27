@@ -118,6 +118,7 @@ var app = {
 
     function showCard(){
       var card = $('.card', this)
+      play_sound('ff-bankroll.wav')
       var flipped = $(card).data("flipped")
       var cardRotate = (flipped)?0:-180;
       TweenLite.to(card, 1, {rotationX:cardRotate, ease:Back.easeOut})
