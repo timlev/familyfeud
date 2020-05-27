@@ -5,10 +5,10 @@ var missPointTeam1 = 0;
 var missPointTeam2 = 0;
 
 	function start_game(){
-		play_sound('ff_open.mp3');
+		// play_sound('ff_open.mp3');
 		document.getElementById("buttonStart").disabled = true;
 
-		var counter = 33;
+		var counter = 5; //33
 		var interval = setInterval(function() {
 			counter--;
 			if (counter < 5) {
